@@ -1,18 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
 /* Geral */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #121212);
     color: #ffffff;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-    overflow-x: hidden;
+
 }
 
 /* Header */
 header {
     color: var(--dark);
-    padding: rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -20,6 +26,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cabecalho :hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .logo {
@@ -39,21 +50,21 @@ nav {
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.322);
-    padding: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
     width: 100%;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
-    gap: 3rem;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav ul li {
-    margin: 0 70px;
+    margin: 0 30px;
 }
 
 nav ul li a {
@@ -259,5 +270,17 @@ footer {
 
     .social-links ul li:hover .text {
         opacity: 1;
+    }
+}
+
+/* Responsividade Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
 }
