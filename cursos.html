@@ -36,14 +36,72 @@
         </ul>
     </nav>
 
-    <!-- Conteúdo principal da página -->
-    <main class="container my-5">
-        <section> <!-- Seção de boas-vindas -->
-            <div class="bem-vindo">
-                <h2>Bem-vindo a EkóLab</h2>
-                <p>Um espaço para jovens, adultos e crianças negras criarem soluções impactantes e inovadoras.</p>
-            </div>
-        </section>
+    <main class="container-fluid">
+        <div class="row g-0">
+            <!-- Card fixo à esquerda com scroll -->
+            <aside class="col-3">
+                <div class="card card-scroll">
+                    <div class="card-body">
+                        <h5 class="card-title">Menu</h5>
+                        <p class="card-text">Navegue para outras páginas:</p>
+                        <ul class="list-group">
+                            <!-- Conteúdo extenso para testar o scroll -->
+                            <li class="list-group-item">
+                                <a href="pagina1.html" class="text-decoration-none">Página 1</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina2.html" class="text-decoration-none">Página 2</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina3.html" class="text-decoration-none">Página 3</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina4.html" class="text-decoration-none">Página 4</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina5.html" class="text-decoration-none">Página 5</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina6.html" class="text-decoration-none">Página 6</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina7.html" class="text-decoration-none">Página 7</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina8.html" class="text-decoration-none">Página 8</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina9.html" class="text-decoration-none">Página 9</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="pagina10.html" class="text-decoration-none">Página 10</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo principal -->
+            <section class="col-9">
+                <div class="p-4">
+                    <h1>Conteúdo Principal</h1>
+                    <p>
+                        Este é o espaço reservado para o conteúdo principal da página. O card do lado esquerdo agora
+                        ocupa
+                        toda a altura e largura do lado esquerdo, com uma barra de rolagem vertical quando o conteúdo
+                        excede o espaço disponível.
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 text-start">Esquerda</div>
+                        <div class="col-4 text-center">Centro</div>
+                        <div class="col-4 text-end">Direita</div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
     </main>
 
     <!-- Rodapé da página com fundo escuro e texto centralizado -->

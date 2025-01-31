@@ -50,8 +50,7 @@ nav {
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.322);
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -60,7 +59,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 nav ul li {
@@ -110,7 +109,7 @@ nav ul li a:hover::before {
 
 /* Main content */
 main {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 3rem auto;
     padding: 0 2rem;
     text-align: center;
