@@ -1,4 +1,4 @@
-* Integrantes do Squad 58: *
+Integrantes do Squad 58:
 
 1 .   [ Eduardo Correia ] (  https://github.com/NzkYZY  )
 2 .   [ Marcus Vinicius de Oliveira ] (  https://github.com/Vinny-Oliver  )
