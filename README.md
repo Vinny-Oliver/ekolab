@@ -17,7 +17,7 @@
 
 A desigualdade educacional impacta significativamente a população negra no Brasil, refletindo-se em diversos indicadores ao longo da trajetória escolar e profissional.
 
-## 🎯 Qual o objetivo público?
+## 🎯 Qual o público-alvo? A solução poderá ser aplicada a todos, sem restrição de idade ou grau de escolaridade, por exemplo? 
 
 ### 📌 Jovens Negros (16-18 anos)
 - **Interesses**: Primeiro contato com tecnologia, orientação profissional, introdução a carreiras digitais.
@@ -58,7 +58,7 @@ Esses dados reforçam a necessidade de soluções externas à equidade educacion
 - Desemprego entre jovens negros é quase **o dobro** em relação a jovens brancos *(Fonte: IPEA)*.
 - Racismo estrutural dentro do ambiente escolar pode levar ao desinteresse e evasão.
 
-## 📅 Cronograma de Atividades
+## 📅 Qual o cronograma das atividades?  
 
 ### Semana 1 - Compreensão do Tema e Definição do Problema
 - Estudo e discussão do tema.
@@ -78,16 +78,14 @@ Esses dados reforçam a necessidade de soluções externas à equidade educacion
 - Ajustes finais e commits no GitHub.
 - Testes finais e documentação do projeto.
 
-## 📌 Distribuição das Atividades
+## 📌 Como será feita a distribuição das atividades entre os integrantes do squad para essa primeira entrega? 
 
-- **Líder**: Eduardo Correia
-- **Vice-Líder**: Marcus Oliveira
 - **Desenvolvedores**: Eduardo Correia, Marcus Oliveira, Letícia Morais
 - **Pesquisadores**: Giovanna Ferreira
 - **Documentação**: Letícia Morais, Giovanna Ferreira
 - **Apresentação**: Eduardo Correia, Marcus Oliveira, Letícia Morais, Giovanna Ferreira
 
-## 🛠️ Ferramenta de Gerenciamento
+## 🛠️ Qual a ferramenta de gerenciamento de projeto será usada para o monitoramento das atividades? Ex: Trello, Asana, Jira, Monday.
 
 Utilizaremos **Trello** para o monitoramento e distribuição de atividades.
 
