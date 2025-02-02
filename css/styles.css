@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 /* Geral */
 body {
@@ -23,43 +27,65 @@ header {
 }
 
 .cabecalho {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Adiciona essa propriedade para permitir o texto ir para a linha abaixo */
+
 }
+
 
 .cabecalho :hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
 
+
 .logo {
     width: 40%;
 }
 
 .texto-logo {
-    font-size: 5rem;
+    font-size: 2.5rem;
+    max-width: 100%; /* Impede que o texto ultrapasse a tela */
+    text-align: center; /* Centraliza o texto */
+    word-break: break-word; /* Quebra o texto se necessário */
     font-weight: bold;
-    color: var(--primary);
+    margin-left: 1rem; /* Mantém o texto ao lado da logo em telas grandes */
 }
 
+
+/* Responsividade Navbar */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Navbar */
 nav {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.322);
-    padding: 2rem;
+    padding: 1rem 2rem; /* Adiciona um pouco de espaço nas laterais */
     width: 100%;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens que não cabem na tela se movam para a linha seguinte */
     justify-content: center;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 nav ul li {
@@ -158,6 +184,30 @@ footer {
     margin-bottom: 15px;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .social-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links ul li {
+        width: 180px;
+    }
+
+    .social-links .text {
+        opacity: 0;
+    }
+
+    .social-links ul li:hover .icon {
+        opacity: 0;
+    }
+
+    .social-links ul li:hover .text {
+        opacity: 1;
+    }
+}
+
 .social-links {
     margin-top: 1rem;
 }
@@ -246,40 +296,4 @@ footer {
 
 .social-links ul li:hover .text {
     opacity: 1;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .social-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-links ul li {
-        width: 180px;
-    }
-
-    .social-links .text {
-        opacity: 0;
-    }
-
-    .social-links ul li:hover .icon {
-        opacity: 0;
-    }
-
-    .social-links ul li:hover .text {
-        opacity: 1;
-    }
-}
-
-/* Responsividade Navbar */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
 }
