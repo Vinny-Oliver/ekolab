@@ -2,17 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-html, body {
-    overflow-x: hidden;
-    width: 100%;
 }
 
 /* Geral */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #121212);
     color: #ffffff;
     line-height: 1.6;
@@ -22,16 +16,17 @@ body {
 /* Header */
 header {
     color: var(--dark);
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
 }
 
 .cabecalho {
-    
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Adiciona essa propriedade para permitir o texto ir para a linha abaixo */
+    flex-wrap: wrap;
+    /* Adiciona essa propriedade para permitir o texto ir para a linha abaixo */
 
 }
 
@@ -42,17 +37,22 @@ header {
 }
 
 
+
 .logo {
     width: 40%;
 }
 
 .texto-logo {
     font-size: 2.5rem;
-    max-width: 100%; /* Impede que o texto ultrapasse a tela */
-    text-align: center; /* Centraliza o texto */
-    word-break: break-word; /* Quebra o texto se necessário */
+    max-width: 100%;
+    /* Impede que o texto ultrapasse a tela */
+    text-align: center;
+    /* Centraliza o texto */
+    word-break: break-word;
+    /* Quebra o texto se necessário */
     font-weight: bold;
-    margin-left: 1rem; /* Mantém o texto ao lado da logo em telas grandes */
+    margin-left: 1rem;
+    /* Mantém o texto ao lado da logo em telas grandes */
 }
 
 
@@ -74,16 +74,19 @@ nav {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.322);
-    padding: 1rem 2rem; /* Adiciona um pouco de espaço nas laterais */
+    padding: 1rem 2rem;
+    /* Adiciona um pouco de espaço nas laterais */
     width: 100%;
-    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-x: hidden;
+    /* Impede rolagem horizontal */
 
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens que não cabem na tela se movam para a linha seguinte */
+    flex-wrap: wrap;
+    /* Permite que os itens que não cabem na tela se movam para a linha seguinte */
     justify-content: center;
     gap: 1.5rem;
 }
@@ -111,7 +114,6 @@ nav ul:hover li a {
 nav ul li a:hover {
     color: #00d4ff;
     opacity: 1;
-    transform-style: (2.2);
     transform: scale(2.2);
     transition: transform 0.2s;
 }
@@ -164,6 +166,92 @@ header {
     font-size: 1.2rem;
 }
 
+/* Seção de Cursos */
+.explorar {
+    text-align: center;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #2d4a50, #322ba8);
+}
+
+.explorar h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #333;
+    border-radius: 10px;
+    width: 400px;
+    /* Aumenta o tamanho do card */
+    min-height: 200px;
+    /* Garante altura suficiente */
+}
+
+.course-card h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.course-card button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #0288d1;
+}
+
+/* Seção de Contato */
+.contato {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato input,
+.contato textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0288d1;
+}
+
+
 /* Footer */
 footer {
     background: linear-gradient(90deg, #121212, #1e1e2f);
@@ -182,30 +270,6 @@ footer {
 .contact {
     color: white;
     margin-bottom: 15px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .social-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-links ul li {
-        width: 180px;
-    }
-
-    .social-links .text {
-        opacity: 0;
-    }
-
-    .social-links ul li:hover .icon {
-        opacity: 0;
-    }
-
-    .social-links ul li:hover .text {
-        opacity: 1;
-    }
 }
 
 .social-links {
