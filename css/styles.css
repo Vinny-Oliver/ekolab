@@ -10,13 +10,16 @@ body {
     background: linear-gradient(135deg, #1e1e2f, #121212);
     color: #ffffff;
     line-height: 1.6;
-    overflow-y: scroll; /* Força o scroll vertical */
-    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+    overflow-y: scroll;
+    /* Força o scroll vertical */
+    min-height: 100vh;
+    /* Garante que o corpo ocupe toda a altura da janela */
 
 }
 
 html {
-    scroll-behavior: smooth; /* Suaviza o movimento do scroll */
+    scroll-behavior: smooth;
+    /* Suaviza o movimento do scroll */
 }
 
 /* Customiza a barra de rolagem */
@@ -241,7 +244,7 @@ header {
 .contato {
     text-align: center;
     padding: 50px 20px;
-    background-color: #222;
+    background: linear-gradient(135deg, #2d4a50, #322ba8);
 }
 
 .contato form {
