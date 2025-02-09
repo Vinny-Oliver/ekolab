@@ -6,8 +6,6 @@
 2. [Marcus Vinicius de Oliveira](https://github.com/Vinny-Oliver) - (Vice-Líder)
 3. [Letícia Morais](https://github.com/LeleCastanheira)
 4. [Giovanna Carolina Ferreira](https://github.com/Giovanna-05)
-5. [Nome do aluno 5]
-6. [Nome do aluno 6]
 
 ## 🎯 Tema do Projeto
 
