@@ -1,6 +1,6 @@
 # 🌍 **Bem-vindo ao EkóLab – O Laboratório de Transformação Social!**  
 
-O **EkóLab** é um espaço dedicado à comunidade negra, criado para proporcionar acesso ao conhecimento em tecnologia e programação de forma **inclusiva, acessível e transformadora**.  
+O **Ekólab** é um espaço dedicado à comunidade negra, criado para proporcionar acesso ao conhecimento em tecnologia e programação de forma **inclusiva, acessível e transformadora**.  
 
 ## 🚀 **Nossa Missão**  
 Nosso objetivo é capacitar e empoderar a comunidade negra no mundo digital, oferecendo cursos de:  
