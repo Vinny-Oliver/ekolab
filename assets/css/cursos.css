@@ -11,10 +11,8 @@ body {
     background: linear-gradient(135deg, #1e1e2f, #121212);
     color: #ffffff;
     line-height: 1.6;
-    overflow-y: scroll;
-    /* Força o scroll vertical */
-    min-height: 100vh;
-    /* Garante que o corpo ocupe toda a altura da janela */
+    overflow-y: scroll; /* Força o scroll vertical */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
 
 }
 
@@ -49,20 +47,13 @@ header {
 
 
 .logo {
-    width: 40%;
+    margin: 0 auto;
 }
 
 .texto-logo {
-    font-size: 2.5rem;
-    max-width: 100%;
-    /* Impede que o texto ultrapasse a tela */
-    text-align: center;
-    /* Centraliza o texto */
-    word-break: break-word;
-    /* Quebra o texto se necessário */
+    font-size: 3.5rem;
+    max-width: 100%; /* Impede que o texto ultrapasse a tela */
     font-weight: bold;
-    margin-left: 1rem;
-    /* Mantém o texto ao lado da logo em telas grandes */
 }
 
 
@@ -271,31 +262,26 @@ header {
 
 /* Track da barra de rolagem (o fundo da barra de rolagem) */
 ::-webkit-scrollbar-track {
-    background: #212121;
-    /* Cor do fundo da track */
+    background: #212121;/* Cor do fundo da track */
     border-radius: 10px;
 }
 
 /* O polegar da barra de rolagem (parte que o usuário arrasta) */
 ::-webkit-scrollbar-thumb {
-    background: #ff00cc;
-    /* Cor do polegar */
+    background: #ff00cc; /* Cor do polegar */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease;
-    /* Efeito de transição */
+    transition: background 0.3s ease; /* Efeito de transição */
 }
 
 /* Hover no polegar da barra de rolagem (efeito quando o mouse passa por cima) */
 ::-webkit-scrollbar-thumb:hover {
-    background: #3333ff;
-    /* Cor ao passar o mouse */
+    background: #3333ff; /* Cor ao passar o mouse */
 }
 
 /* Para barra de rolagem horizontal */
 ::-webkit-scrollbar-horizontal {
-    height: 8px;
-    /* Largura da barra horizontal */
+    height: 8px; /* Largura da barra horizontal */
 }
 
 /* Estilo responsivo para dispositivos menores */

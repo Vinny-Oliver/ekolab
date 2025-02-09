@@ -160,113 +160,190 @@ main {
     text-align: center;
 }
 
-/* Header */
-header {
-    transition: background-color 0.3s;
-}
-
-/* Bem-vindo */
-.bem-vindo {
-    background: linear-gradient(135deg, #2d4a50, #322ba8);
-    color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.bem-vindo h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.bem-vindo p {
-    font-size: 1.2rem;
-}
-
-/* Seção de Cursos */
-.explorar {
-    text-align: center;
-    padding: 50px 30px;
-    background: linear-gradient(135deg, #2d4a50, #322ba8);
-}
-
-.explorar h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.course-list {
+.main-register{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;  
 }
 
-.course-card {
-    background-color: #333;
-    border-radius: 10px;
-    width: 400px;
-    /* Aumenta o tamanho do card */
-    min-height: 200px;
-    /* Garante altura suficiente */
-}
-
-.course-card h3 {
-    color: #00bcd4;
-    margin-bottom: 10px;
-}
-
-.course-card p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.course-card button {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.course-card button:hover {
-    background-color: #0288d1;
-}
-
-/* Seção de Contato */
-.contato {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #2d4a50, #322ba8);
-}
-
-.contato form {
+.left-register{
+    width: 50vw;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+
+
+.left-register  > h1{
+    margin-top: 100px;
+    font-size: 2vw;
+    color: #f76530;
+}
+
+.image-register{
+    width: 30vw;
+    margin-top: -60px;
+}
+
+.right-register{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.contato input,
-.contato textarea {
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.card-register{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #222235;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
 }
 
-.contato button {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 20px;
+.card-register h1{
+    color: #f76530;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:  10px 0px;
+}
+
+.textfield input{
+    width: 100%;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.contato button:hover {
-    background-color: #0288d1;
+.textfield input::placeholder{
+    color: #ffffff;
 }
+
+.textfield label{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-register .column{
+    display: flex;
+    column-gap: 30px;
+}
+
+
+.btn-register{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #f76530;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #eb7347;
+    
+}
+
+/* Efeito quando o botão é hover (passa o mouse por cima) */
+.btn-register:hover {
+    background-color: #0056b3; /* muda a cor do fundo quando o mouse está sobre o botão */
+    transition: background-color 0.3s ease; /* animação suave na mudança de cor */
+}
+
+.register-link{
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff; 
+}
+
+.register-link a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+/* Responsividade para o Layout de Cadastro */
+@media (max-width: 900px) {
+    .main-register {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        margin-top: 20px;  /* Espaçamento superior para não encostar na navbar */
+        margin-bottom: 20px; /* Espaçamento inferior para não encostar no footer */
+    }
+
+    .left-register, .right-register {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-register h1 {
+        font-size: 2rem;
+    }
+
+    .image-register {
+        width: 50%;
+        max-width: 250px;
+    }
+
+    .card-register {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .left-register h1 {
+        font-size: 1.8rem;
+    }
+
+    .image-register {
+        width: 70%;
+    }
+
+    .card-register {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .textfield input {
+        font-size: 0.9rem;
+    }
+
+    .btn-register {
+        font-size: 1rem;
+    }
+}
+
+
 
 
 /* Footer */
