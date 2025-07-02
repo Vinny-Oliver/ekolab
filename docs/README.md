@@ -2,8 +2,7 @@
 
 ## 👥 Integrantes do Squad 58
 
-1. [Eduardo Correia](https://github.com/NzkYZY) - (Líder)
-2. [Marcus Vinicius de Oliveira](https://github.com/Vinny-Oliver) - (Vice-Líder)
+1. [Marcus Vinicius de Oliveira](https://github.com/Vinny-Oliver) - (Líder)
 3. [Letícia Morais](https://github.com/LeleCastanheira)
 4. [Giovanna Carolina Ferreira](https://github.com/Giovanna-05)
 
